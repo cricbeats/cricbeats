@@ -156,22 +156,6 @@
         {
           "name": "Krish Bhagat",
           "points": 5.0
-        },
-        {
-          "name": "Overseas",
-          "points": 8.0
-        },
-        {
-          "name": "Bowlers",
-          "points": 5.0
-        },
-        {
-          "name": "Wicketkeeper",
-          "points": 1.0
-        },
-        {
-          "name": "RTMs",
-          "points": 1.0
         }
       ],
       "totalPoints": 5258.0
@@ -287,22 +271,6 @@
         {
           "name": "Gerald Cotzea",
           "points": 0
-        },
-        {
-          "name": "Overseas",
-          "points": 2.0
-        },
-        {
-          "name": "Bowlers",
-          "points": 5.0
-        },
-        {
-          "name": "Wicketkeeper",
-          "points": 1.0
-        },
-        {
-          "name": "RTMs",
-          "points": 0.0
         }
       ],
       "totalPoints": 4030.0
@@ -442,22 +410,6 @@
         {
           "name": "Arshin Kulkarni",
           "points": 0
-        },
-        {
-          "name": "Overseas",
-          "points": 8.0
-        },
-        {
-          "name": "Bowlers",
-          "points": 5.0
-        },
-        {
-          "name": "Wicketkeeper",
-          "points": 1.0
-        },
-        {
-          "name": "RTMs",
-          "points": 0.0
         }
       ],
       "totalPoints": 5459.0
@@ -613,22 +565,6 @@
         {
           "name": "Azmatullah Omarzai",
           "points": 0
-        },
-        {
-          "name": "Overseas",
-          "points": 6.0
-        },
-        {
-          "name": "Bowlers",
-          "points": 5.0
-        },
-        {
-          "name": "Wicketkeeper",
-          "points": 1.0
-        },
-        {
-          "name": "RTMs",
-          "points": 0.0
         }
       ],
       "totalPoints": 4416.0
@@ -740,22 +676,6 @@
         {
           "name": "Manish Pandey",
           "points": 0.0
-        },
-        {
-          "name": "Overseas",
-          "points": 7.0
-        },
-        {
-          "name": "Bowlers",
-          "points": 5.0
-        },
-        {
-          "name": "Wicketkeeper",
-          "points": 1.0
-        },
-        {
-          "name": "RTMs",
-          "points": 2.0
         }
       ],
       "totalPoints": 4118.0
@@ -886,22 +806,6 @@
         },
         {
           "name": "Anrich Nortje",
-          "points": 0.0
-        },
-        {
-          "name": "Overseas",
-          "points": 5.0
-        },
-        {
-          "name": "Bowlers",
-          "points": 5.0
-        },
-        {
-          "name": "Wicketkeeper",
-          "points": 1.0
-        },
-        {
-          "name": "RTMs",
           "points": 0.0
         }
       ],
@@ -1042,22 +946,6 @@
         {
           "name": "Urvil Patel",
           "points": 57.0
-        },
-        {
-          "name": "Overseas",
-          "points": 8.0
-        },
-        {
-          "name": "Bowlers",
-          "points": 5.0
-        },
-        {
-          "name": "Wicketkeeper",
-          "points": 1.0
-        },
-        {
-          "name": "RTMs",
-          "points": 0.0
         }
       ],
       "totalPoints": 4435.0
@@ -1197,22 +1085,6 @@
         {
           "name": "Vignesh Puthur",
           "points": 0
-        },
-        {
-          "name": "Overseas",
-          "points": 8.0
-        },
-        {
-          "name": "Bowlers",
-          "points": 5.0
-        },
-        {
-          "name": "Wicketkeeper",
-          "points": 1.0
-        },
-        {
-          "name": "RTMs",
-          "points": 0.0
         }
       ],
       "totalPoints": 4613.0
@@ -1336,22 +1208,6 @@
         {
           "name": "Tejasvi Singh",
           "points": 0
-        },
-        {
-          "name": "Overseas",
-          "points": 3.0
-        },
-        {
-          "name": "Bowlers",
-          "points": 5.0
-        },
-        {
-          "name": "Wicketkeeper",
-          "points": 1.0
-        },
-        {
-          "name": "RTMs",
-          "points": 1.0
         }
       ],
       "totalPoints": 4533.0
@@ -1739,46 +1595,6 @@
       "catches": 1
     },
     {
-      "name": "Overseas",
-      "team": "ESCN 11",
-      "matches": 0,
-      "totalPoints": 8.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Bowlers",
-      "team": "ESCN 11",
-      "matches": 0,
-      "totalPoints": 5.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Wicketkeeper",
-      "team": "ESCN 11",
-      "matches": 0,
-      "totalPoints": 1.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "RTMs",
-      "team": "ESCN 11",
-      "matches": 0,
-      "totalPoints": 1.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
       "name": "Vaibhav Suryavanshi",
       "team": "Madmax Xl",
       "matches": 0,
@@ -2043,46 +1859,6 @@
       "team": "Madmax Xl",
       "matches": 0,
       "totalPoints": 0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Overseas",
-      "team": "Madmax Xl",
-      "matches": 0,
-      "totalPoints": 2.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Bowlers",
-      "team": "Madmax Xl",
-      "matches": 0,
-      "totalPoints": 5.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Wicketkeeper",
-      "team": "Madmax Xl",
-      "matches": 0,
-      "totalPoints": 1.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "RTMs",
-      "team": "Madmax Xl",
-      "matches": 0,
-      "totalPoints": 0.0,
       "avgPoints": 0,
       "runs": 0,
       "wickets": 0,
@@ -2413,46 +2189,6 @@
       "team": "Patil's X1",
       "matches": 0,
       "totalPoints": 0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Overseas",
-      "team": "Patil's X1",
-      "matches": 0,
-      "totalPoints": 8.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Bowlers",
-      "team": "Patil's X1",
-      "matches": 0,
-      "totalPoints": 5.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Wicketkeeper",
-      "team": "Patil's X1",
-      "matches": 0,
-      "totalPoints": 1.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "RTMs",
-      "team": "Patil's X1",
-      "matches": 0,
-      "totalPoints": 0.0,
       "avgPoints": 0,
       "runs": 0,
       "wickets": 0,
@@ -2829,46 +2565,6 @@
       "catches": 0
     },
     {
-      "name": "Overseas",
-      "team": "Backfoot Bazball 11",
-      "matches": 0,
-      "totalPoints": 6.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Bowlers",
-      "team": "Backfoot Bazball 11",
-      "matches": 0,
-      "totalPoints": 5.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Wicketkeeper",
-      "team": "Backfoot Bazball 11",
-      "matches": 0,
-      "totalPoints": 1.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "RTMs",
-      "team": "Backfoot Bazball 11",
-      "matches": 0,
-      "totalPoints": 0.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
       "name": "Devdutt Padikkal",
       "team": "Bevarsi Brothers CC",
       "matches": 8,
@@ -3127,46 +2823,6 @@
       "runs": 0,
       "wickets": 0,
       "catches": 1
-    },
-    {
-      "name": "Overseas",
-      "team": "Bevarsi Brothers CC",
-      "matches": 0,
-      "totalPoints": 7.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Bowlers",
-      "team": "Bevarsi Brothers CC",
-      "matches": 0,
-      "totalPoints": 5.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Wicketkeeper",
-      "team": "Bevarsi Brothers CC",
-      "matches": 0,
-      "totalPoints": 1.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "RTMs",
-      "team": "Bevarsi Brothers CC",
-      "matches": 0,
-      "totalPoints": 2.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
     },
     {
       "name": "Rashid Khan",
@@ -3474,46 +3130,6 @@
       "matches": 1,
       "totalPoints": 0.0,
       "avgPoints": 2.0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Overseas",
-      "team": "Ferrari XI",
-      "matches": 0,
-      "totalPoints": 5.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Bowlers",
-      "team": "Ferrari XI",
-      "matches": 0,
-      "totalPoints": 5.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Wicketkeeper",
-      "team": "Ferrari XI",
-      "matches": 0,
-      "totalPoints": 1.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "RTMs",
-      "team": "Ferrari XI",
-      "matches": 0,
-      "totalPoints": 0.0,
-      "avgPoints": 0,
       "runs": 0,
       "wickets": 0,
       "catches": 0
@@ -3849,46 +3465,6 @@
       "catches": 1
     },
     {
-      "name": "Overseas",
-      "team": "Bowl Movement",
-      "matches": 0,
-      "totalPoints": 8.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Bowlers",
-      "team": "Bowl Movement",
-      "matches": 0,
-      "totalPoints": 5.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Wicketkeeper",
-      "team": "Bowl Movement",
-      "matches": 0,
-      "totalPoints": 1.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "RTMs",
-      "team": "Bowl Movement",
-      "matches": 0,
-      "totalPoints": 0.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
       "name": "Rinku Singh",
       "team": "RCBCSK X1",
       "matches": 8,
@@ -4219,46 +3795,6 @@
       "catches": 0
     },
     {
-      "name": "Overseas",
-      "team": "RCBCSK X1",
-      "matches": 0,
-      "totalPoints": 8.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Bowlers",
-      "team": "RCBCSK X1",
-      "matches": 0,
-      "totalPoints": 5.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Wicketkeeper",
-      "team": "RCBCSK X1",
-      "matches": 0,
-      "totalPoints": 1.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "RTMs",
-      "team": "RCBCSK X1",
-      "matches": 0,
-      "totalPoints": 0.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
       "name": "Varun Chakaravarthy",
       "team": "Wicket Warriors",
       "matches": 7,
@@ -4543,46 +4079,6 @@
       "team": "Wicket Warriors",
       "matches": 0,
       "totalPoints": 0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Overseas",
-      "team": "Wicket Warriors",
-      "matches": 0,
-      "totalPoints": 3.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Bowlers",
-      "team": "Wicket Warriors",
-      "matches": 0,
-      "totalPoints": 5.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "Wicketkeeper",
-      "team": "Wicket Warriors",
-      "matches": 0,
-      "totalPoints": 1.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
-    },
-    {
-      "name": "RTMs",
-      "team": "Wicket Warriors",
-      "matches": 0,
-      "totalPoints": 1.0,
       "avgPoints": 0,
       "runs": 0,
       "wickets": 0,
