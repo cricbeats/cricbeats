@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL 2026 • Fantasy Premier League</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: #0f0f1a; color: #e8e8f0; min-height: 100vh; }
+
+        .header {
+            background: linear-gradient(135deg, #1e1e3f 0%, #2d1b69 50%, #1e1e3f 100%);
+            padding: 32px 30px;
+            text-align: center;
+            border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%; width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.05) 0%, transparent 70%);
+            animation: pulse 8s ease-in-out infinite;
+        }
+        @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+        .header h1 { font-size: 2.2rem; font-weight: 800; background: linear-gradient(135deg, #a78bfa, #f472b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; position: relative; }
+        .header p { color: #9ca3af; margin-top: 6px; font-size: 0.9rem; position: relative; }
+
+        .container { max-width: 1440px; margin: 0 auto; padding: 24px; }
+
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 28px; }
+        .stat-box {
+            background: linear-gradient(135deg, #1e1e3f, #252547);
+            padding: 20px; border-radius: 16px; text-align: center;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .stat-box:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(139, 92, 246, 0.15); }
+        .stat-box .val { font-size: 2rem; font-weight: 800; background: linear-gradient(135deg, #a78bfa, #67e8f9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .stat-box .lbl { font-size: 0.75rem; color: #9ca3af; margin-top: 4px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+        .tabs { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+        .tab {
+            padding: 10px 22px; background: rgba(30, 30, 63, 0.8);
+            border: 1px solid rgba(139, 92, 246, 0.2); border-radius: 100px;
+            cursor: pointer; transition: all 0.2s; font-size: 0.9rem; font-weight: 500;
+        }
+        .tab:hover { border-color: rgba(139, 92, 246, 0.5); background: rgba(139, 92, 246, 0.1); }
+        .tab.active { background: linear-gradient(135deg, #7c3aed, #a855f7); border-color: transparent; color: #fff; box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3); }
+
+        .panel { display: none; animation: fadeIn 0.3s; }
+        .panel.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+        .leaderboard { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+        .team-card {
+            background: linear-gradient(145deg, #1e1e3f, #1a1a35);
+            border-radius: 20px; padding: 24px;
+            border: 1px solid rgba(139, 92, 246, 0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative; overflow: hidden;
+        }
+        .team-card:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(139, 92, 246, 0.12); }
+        .team-card .rank-badge {
+            position: absolute; top: 16px; right: 16px;
+            width: 36px; height: 36px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 700; font-size: 0.85rem;
+            background: rgba(139, 92, 246, 0.15); color: #a78bfa;
+            border: 1px solid rgba(139, 92, 246, 0.3);
+        }
+        .team-card.gold .rank-badge { background: rgba(251, 191, 36, 0.15); color: #fbbf24; border-color: rgba(251, 191, 36, 0.3); }
+        .team-card.silver .rank-badge { background: rgba(209, 213, 219, 0.15); color: #d1d5db; border-color: rgba(209, 213, 219, 0.3); }
+        .team-card.bronze .rank-badge { background: rgba(251, 146, 60, 0.15); color: #fb923c; border-color: rgba(251, 146, 60, 0.3); }
+        .team-card h3 { font-size: 1.15rem; font-weight: 700; color: #f3f4f6; margin-bottom: 4px; }
+        .team-card .owner { color: #6b7280; font-size: 0.8rem; margin-bottom: 14px; }
+        .team-card .total { font-size: 2.2rem; font-weight: 800; margin-bottom: 16px; background: linear-gradient(135deg, #a78bfa, #67e8f9); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .team-card .players { max-height: 320px; overflow-y: auto; }
+        .team-card .players::-webkit-scrollbar { width: 4px; }
+        .team-card .players::-webkit-scrollbar-thumb { background: rgba(139, 92, 246, 0.3); border-radius: 4px; }
+        .team-card .player-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid rgba(139, 92, 246, 0.06); font-size: 0.85rem; }
+        .team-card .player-row:last-child { border: none; }
+        .team-card .player-row .pts { color: #67e8f9; font-weight: 600; }
+        .team-card .player-row .no-pts { color: #4b5563; }
+
+        table { width: 100%; border-collapse: collapse; background: #1e1e3f; border-radius: 16px; overflow: hidden; }
+        th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid rgba(139, 92, 246, 0.1); }
+        th { background: rgba(139, 92, 246, 0.1); color: #a78bfa; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; cursor: pointer; position: sticky; top: 0; font-weight: 600; }
+        th:hover { background: rgba(139, 92, 246, 0.2); }
+        td { font-size: 0.88rem; }
+        tr:hover td { background: rgba(139, 92, 246, 0.05); }
+        .rank { color: #a78bfa; font-weight: 700; }
+
+        .search {
+            width: 100%; padding: 14px 20px; border-radius: 100px;
+            border: 1px solid rgba(139, 92, 246, 0.2); background: #1e1e3f;
+            color: #e8e8f0; font-size: 0.95rem; margin-bottom: 16px;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .search:focus { outline: none; border-color: #7c3aed; box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1); }
+        .search::placeholder { color: #6b7280; }
+
+        .bar-chart { display: flex; align-items: flex-end; gap: 12px; height: 260px; padding: 20px 0; }
+        .bar-wrapper { flex: 1; display: flex; flex-direction: column; align-items: center; }
+        .bar { width: 100%; border-radius: 10px 10px 0 0; transition: height 0.6s cubic-bezier(0.4, 0, 0.2, 1); min-height: 6px; }
+        .bar-label { font-size: 0.7rem; color: #9ca3af; margin-top: 10px; text-align: center; writing-mode: vertical-rl; transform: rotate(180deg); max-height: 90px; overflow: hidden; }
+        .bar-val { font-size: 0.8rem; color: #a78bfa; margin-bottom: 6px; font-weight: 600; }
+
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.5rem; }
+            .leaderboard { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏏 IPL 2026 • Fantasy Premier League</h1>
+        <p>Dream11 Scoring System • Season 19 • <span id="updated"></span></p>
+    </div>
+    <div class="container">
+        <div class="stats" id="summary-stats"></div>
+        <div class="tabs">
+            <div class="tab active" data-tab="teams">🏆 Team Leaderboard</div>
+            <div class="tab" data-tab="players">👤 All Players</div>
+            <div class="tab" data-tab="chart">📊 Comparison</div>
+        </div>
+        <div class="panel active" id="panel-teams">
+            <div class="leaderboard" id="leaderboard"></div>
+        </div>
+        <div class="panel" id="panel-players">
+            <input class="search" id="player-search" placeholder="🔍 Search player or team..." />
+            <div style="overflow-x:auto; border-radius: 16px;">
+                <table id="player-table">
+                    <thead><tr><th>#</th><th>Player</th><th>Team</th><th>Points</th><th>Matches</th><th>Avg Pts</th><th>Runs</th><th>Wickets</th><th>Catches</th></tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="panel" id="panel-chart">
+            <h3 style="margin-bottom:16px; color:#a78bfa; font-weight: 600;">Total Points by Team</h3>
+            <div class="bar-chart" id="bar-chart"></div>
+        </div>
+    </div>
+    <script>
+    let TEAMS = [], PLAYERS = [];
+    const COLORS = ['#7c3aed','#a855f7','#ec4899','#f43f5e','#f97316','#eab308','#22c55e','#06b6d4','#3b82f6'];
+
+    async function loadData() {
+        const resp = await fetch('data.json');
+        const data = await resp.json();
+        TEAMS = data.teams;
+        PLAYERS = data.players;
+        document.getElementById('updated').textContent = data.updated || 'N/A';
+        render();
+    }
+
+    function render() {
+        const sorted = [...TEAMS].sort((a, b) => b.totalPoints - a.totalPoints);
+        const topTeam = sorted[0];
+        const topPlayer = PLAYERS.length > 0 ? PLAYERS.reduce((a, b) => (a.totalPoints||0) > (b.totalPoints||0) ? a : b) : null;
+        document.getElementById('summary-stats').innerHTML = `
+            <div class="stat-box"><div class="val">${TEAMS.length}</div><div class="lbl">Teams</div></div>
+            <div class="stat-box"><div class="val">${PLAYERS.length}</div><div class="lbl">Players</div></div>
+            <div class="stat-box"><div class="val">${topTeam ? topTeam.totalPoints : '-'}</div><div class="lbl">🥇 ${topTeam ? topTeam.name : ''}</div></div>
+            <div class="stat-box"><div class="val">${topPlayer ? topPlayer.totalPoints : '-'}</div><div class="lbl">⭐ ${topPlayer ? topPlayer.name : ''}</div></div>
+        `;
+        renderTeams(); renderPlayers(); renderChart();
+    }
+
+    function renderTeams() {
+        const sorted = [...TEAMS].sort((a, b) => b.totalPoints - a.totalPoints);
+        document.getElementById('leaderboard').innerHTML = sorted.map((t, i) => {
+            const cls = i === 0 ? 'gold' : i === 1 ? 'silver' : i === 2 ? 'bronze' : '';
+            const badge = i === 0 ? '🥇' : i === 1 ? '🥈' : i === 2 ? '🥉' : (i+1);
+            return `
+            <div class="team-card ${cls}">
+                <div class="rank-badge">${badge}</div>
+                <h3>${t.name}</h3>
+                <div class="owner">${t.owner}</div>
+                <div class="total">${t.totalPoints}</div>
+                <div class="players">
+                    ${t.players.sort((a,b) => (b.points||0) - (a.points||0)).map(p => `
+                        <div class="player-row">
+                            <span>${p.name}</span>
+                            <span class="${p.points ? 'pts' : 'no-pts'}">${p.points || '-'}</span>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>`;
+        }).join('');
+    }
+
+    let sortCol = 3, sortAsc = false;
+    function renderPlayers(filter = '') {
+        const tbody = document.querySelector('#player-table tbody');
+        let list = PLAYERS;
+        if (filter) list = list.filter(p => p.name.toLowerCase().includes(filter.toLowerCase()) || p.team.toLowerCase().includes(filter.toLowerCase()));
+        list = [...list].sort((a, b) => {
+            const keys = ['name','name','team','totalPoints','matches','avgPoints','runs','wickets','catches'];
+            let va = a[keys[sortCol]] ?? 0, vb = b[keys[sortCol]] ?? 0;
+            if (typeof va === 'string') return sortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+            return sortAsc ? va - vb : vb - va;
+        });
+        tbody.innerHTML = list.map((p, i) => `
+            <tr><td class="rank">${i+1}</td><td>${p.name}</td><td>${p.team}</td><td><b>${p.totalPoints || '-'}</b></td><td>${p.matches || '-'}</td><td>${p.avgPoints || '-'}</td><td>${p.runs || '-'}</td><td>${p.wickets || '-'}</td><td>${p.catches || '-'}</td></tr>
+        `).join('');
+    }
+
+    function renderChart() {
+        const sorted = [...TEAMS].sort((a, b) => b.totalPoints - a.totalPoints);
+        const max = sorted[0]?.totalPoints || 1;
+        document.getElementById('bar-chart').innerHTML = sorted.map((t, i) => `
+            <div class="bar-wrapper">
+                <div class="bar-val">${t.totalPoints}</div>
+                <div class="bar" style="height:${(t.totalPoints / max) * 200}px; background: linear-gradient(to top, ${COLORS[i%COLORS.length]}88, ${COLORS[i%COLORS.length]});"></div>
+                <div class="bar-label">${t.name}</div>
+            </div>
+        `).join('');
+    }
+
+    document.querySelectorAll('.tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+            tab.classList.add('active');
+            document.getElementById('panel-' + tab.dataset.tab).classList.add('active');
+        });
+    });
+    document.getElementById('player-search').addEventListener('input', e => renderPlayers(e.target.value));
+    document.querySelectorAll('#player-table th').forEach((th, i) => {
+        th.addEventListener('click', () => {
+            if (sortCol === i) sortAsc = !sortAsc; else { sortCol = i; sortAsc = false; }
+            renderPlayers(document.getElementById('player-search').value);
+        });
+    });
+    loadData();
+    </script>
+</body>
+</html>
