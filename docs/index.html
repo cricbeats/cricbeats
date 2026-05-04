@@ -65,14 +65,16 @@
             justify-content: center;
         }
         .hero-logo {
-            width: 120px;
-            height: 120px;
+            width: min(180px, 32vw);
+            height: auto;
+            max-height: 180px;
             object-fit: contain;
+            display: block;
             filter: drop-shadow(0 12px 30px #00000088);
             border: 1px solid #d4af3744;
             border-radius: 20px;
             background: linear-gradient(160deg, #100d08, #0d0a06);
-            padding: 10px;
+            padding: 8px;
         }
         .title-wrap { text-align: center; }
         .title-wrap h1 {
@@ -209,8 +211,43 @@
             margin-bottom: 3px;
             cursor: pointer;
             user-select: none;
+            position: relative;
+            outline: none;
         }
         .team-title { display: inline-flex; align-items: center; gap: 8px; }
+        .team-title::after {
+            content: ' ▸';
+            color: #bda25f;
+            font-size: 0.75rem;
+            display: inline-block;
+            transition: transform 0.24s;
+        }
+        .team-card.expanded .team-title::after { transform: rotate(90deg); }
+        .team-card h3[data-tooltip]::before {
+            content: attr(data-tooltip);
+            position: absolute;
+            left: 0;
+            top: -34px;
+            background: #0f0d08;
+            color: #f3e9c6;
+            border: 1px solid #d4af3750;
+            border-radius: 8px;
+            padding: 5px 8px;
+            font-size: 0.72rem;
+            font-weight: 500;
+            white-space: nowrap;
+            opacity: 0;
+            transform: translateY(4px);
+            transition: all 0.18s ease;
+            pointer-events: none;
+            z-index: 5;
+            box-shadow: 0 6px 18px #00000066;
+        }
+        .team-card h3[data-tooltip]:hover::before,
+        .team-card h3[data-tooltip]:focus-visible::before {
+            opacity: 1;
+            transform: translateY(0);
+        }
         .team-logo {
             width: 26px;
             height: 26px;
@@ -239,9 +276,12 @@
             position: relative;
             z-index: 1;
         }
-        .team-card h3::after { content: ' ▸'; color: #bda25f; font-size: 0.75rem; display: inline-block; transition: transform 0.24s; }
-        .team-card.expanded h3::after { transform: rotate(90deg); }
         .team-card .owner { color: var(--muted); font-size: 0.78rem; margin-bottom: 10px; }
+        .team-click-hint {
+            font-size: 0.7rem;
+            color: #bda25f;
+            margin: -6px 0 8px;
+        }
         .team-card .total {
             font-size: 1.75rem;
             font-weight: 800;
@@ -385,10 +425,11 @@
         }
         @media (max-width: 760px) {
             .header-inner { grid-template-columns: 1fr; text-align: center; }
-            .hero-logo { width: min(420px, 92vw); }
+            .hero-logo { width: min(140px, 42vw); max-height: 140px; }
             .podium { grid-template-columns: 1fr; }
             .comp-row { grid-template-columns: 24px 1fr 70px; }
             .tabs { grid-template-columns: 1fr; }
+            .team-card h3[data-tooltip]::before { display: none; }
         }
     </style>
 </head>
@@ -493,7 +534,6 @@
         const topPlayer = PLAYERS.length > 0 ? PLAYERS.reduce((a, b) => (a.totalPoints||0) > (b.totalPoints||0) ? a : b) : null;
         document.getElementById('summary-stats').innerHTML = `
             <div class="stat-box"><div class="val">${TEAMS.length}</div><div class="lbl">Teams</div></div>
-            <div class="stat-box"><div class="val">${PLAYERS.length}</div><div class="lbl">Players</div></div>
             <div class="stat-box"><div class="val">${topTeam ? topTeam.totalPoints : '-'}</div><div class="lbl">Top Team • ${topTeam ? topTeam.name : '-'}</div></div>
             <div class="stat-box"><div class="val">${topPlayer ? topPlayer.totalPoints : '-'}</div><div class="lbl">Top Player • ${topPlayer ? topPlayer.name : '-'}</div></div>
         `;
@@ -548,8 +588,9 @@
             return `
             <div class="team-card ${cls}">
                 <div class="rank-badge">${badge}</div>
-                <h3><span class="team-title">${teamLogoHtml(t.name)}<span>${t.name}</span></span></h3>
+                <h3 tabindex="0" data-tooltip="Click team name to view players" aria-label="Click team name to view players"><span class="team-title">${teamLogoHtml(t.name)}<span>${t.name}</span></span></h3>
                 <div class="owner">${t.owner}</div>
+                <div class="team-click-hint">Click team name to view players</div>
                 <div class="total">${t.totalPoints}</div>
                 <div class="players">
                     ${t.players
@@ -637,13 +678,13 @@
         });
     });
 
-    document.getElementById('player-search').addEventListener('input', e => renderPlayers(e.target.value));
     document.getElementById('leaderboard').addEventListener('click', e => {
         const card = e.target.closest('.team-card');
         if (!card) return;
         if (e.target.closest('.players')) return;
         card.classList.toggle('expanded');
     });
+    document.getElementById('player-search').addEventListener('input', e => renderPlayers(e.target.value));
     document.querySelectorAll('#player-table th').forEach((th, i) => {
         th.addEventListener('click', () => {
             if (sortCol === i) sortAsc = !sortAsc;
