@@ -127,6 +127,16 @@
         .team-card.silver .rank-badge { background: rgba(209, 213, 219, 0.15); color: #d1d5db; border-color: rgba(209, 213, 219, 0.3); }
         .team-card.bronze .rank-badge { background: rgba(251, 146, 60, 0.15); color: #fb923c; border-color: rgba(251, 146, 60, 0.3); }
         .team-card h3 { font-size: 1.15rem; font-weight: 700; color: #f3f4f6; margin-bottom: 4px; cursor: pointer; user-select: none; }
+        .team-title { display: inline-flex; align-items: center; gap: 10px; }
+        .team-logo {
+            width: 28px; height: 28px; border-radius: 50%;
+            display: inline-flex; align-items: center; justify-content: center;
+            font-size: 0.68rem; font-weight: 800; letter-spacing: 0.3px;
+            color: #ffffff;
+            background: radial-gradient(circle at 30% 30%, #ffffff33, transparent 45%), var(--logo, #64748b);
+            box-shadow: 0 0 0 2px #ffffff10, 0 6px 16px #00000055;
+            flex: 0 0 auto;
+        }
         .team-card h3::after { content: ' ▸'; font-size: 0.8rem; color: #6b7280; transition: transform 0.3s; display: inline-block; }
         .team-card.expanded h3::after { transform: rotate(90deg); }
         .team-card .owner { color: #6b7280; font-size: 0.8rem; margin-bottom: 14px; }
@@ -147,6 +157,9 @@
         td { font-size: 0.88rem; }
         tr:hover td { background: rgba(139, 92, 246, 0.05); }
         .rank { color: #a78bfa; font-weight: 700; }
+        .team-cell { display: flex; align-items: center; gap: 8px; }
+        .team-cell .team-logo { width: 22px; height: 22px; font-size: 0.58rem; }
+        .team-cell-name { white-space: nowrap; }
 
         .search {
             width: 100%; padding: 14px 20px; border-radius: 100px;
@@ -157,16 +170,139 @@
         .search:focus { outline: none; border-color: #7c3aed; box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1); }
         .search::placeholder { color: #6b7280; }
 
-        .bar-chart { display: flex; align-items: flex-end; gap: 12px; height: 260px; padding: 20px 0; }
-        .bar-wrapper { flex: 1; display: flex; flex-direction: column; align-items: center; }
-        .bar { width: 100%; border-radius: 10px 10px 0 0; transition: height 0.6s cubic-bezier(0.4, 0, 0.2, 1); min-height: 6px; }
-        .bar-label { font-size: 0.7rem; color: #9ca3af; margin-top: 10px; text-align: center; writing-mode: vertical-rl; transform: rotate(180deg); max-height: 90px; overflow: hidden; }
-        .bar-val { font-size: 0.8rem; color: #a78bfa; margin-bottom: 6px; font-weight: 600; }
-
-        @media (max-width: 768px) {
-            .header h1 { font-size: 1.5rem; }
-            .leaderboard { grid-template-columns: 1fr; }
+        .comparison-wrap { display: grid; gap: 16px; }
+        .metric-switcher {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 4px;
         }
+        .metric-btn {
+            border: 1px solid rgba(139, 92, 246, 0.28);
+            background: #ffffff08;
+            color: #c4b5fd;
+            border-radius: 999px;
+            padding: 7px 12px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .metric-btn:hover {
+            border-color: rgba(139, 92, 246, 0.5);
+            background: #ffffff12;
+        }
+        .metric-btn.active {
+            color: #ffffff;
+            background: linear-gradient(135deg, #7c3aed, #a855f7);
+            border-color: transparent;
+            box-shadow: 0 4px 14px rgba(124, 58, 237, 0.35);
+        }
+        .podium {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 12px;
+        }
+        .podium-card {
+            background: linear-gradient(145deg, #1b1b39, #171730);
+            border: 1px solid rgba(139, 92, 246, 0.22);
+            border-radius: 14px;
+            padding: 12px;
+            display: grid;
+            gap: 8px;
+            align-content: start;
+        }
+        .podium-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: #c4b5fd;
+        }
+        .podium-rank { font-weight: 700; letter-spacing: 0.4px; }
+        .podium-points { font-weight: 700; color: #67e8f9; }
+        .podium-name { font-weight: 700; color: #f3f4f6; font-size: 0.92rem; line-height: 1.2; }
+        .podium-meta { font-size: 0.75rem; color: #9ca3af; }
+        .podium-bar-track {
+            width: 100%;
+            height: 7px;
+            background: #ffffff10;
+            border-radius: 999px;
+            overflow: hidden;
+        }
+        .podium-bar-fill {
+            height: 100%;
+            width: 0;
+            border-radius: 999px;
+            transition: width 0.7s ease;
+        }
+        .comp-list {
+            background: linear-gradient(145deg, #1b1b39, #171730);
+            border: 1px solid rgba(139, 92, 246, 0.2);
+            border-radius: 14px;
+            padding: 10px;
+            display: grid;
+            gap: 8px;
+        }
+        .comp-row {
+            display: grid;
+            grid-template-columns: 28px 1fr 88px;
+            gap: 10px;
+            align-items: center;
+        }
+        .comp-rank {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.74rem;
+            font-weight: 700;
+            color: #ddd6fe;
+            background: #ffffff10;
+            border: 1px solid #ffffff18;
+        }
+        .comp-main { min-width: 0; }
+        .comp-name {
+            font-size: 0.86rem;
+            color: #f3f4f6;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .comp-sub {
+            font-size: 0.72rem;
+            color: #9ca3af;
+            margin-top: 2px;
+        }
+        .comp-track {
+            width: 100%;
+            height: 6px;
+            margin-top: 6px;
+            background: #ffffff10;
+            border-radius: 999px;
+            overflow: hidden;
+        }
+        .comp-fill {
+            height: 100%;
+            width: 0;
+            border-radius: 999px;
+            transition: width 0.7s ease;
+        }
+        .comp-points {
+            text-align: right;
+            font-size: 0.83rem;
+            font-weight: 700;
+            color: #67e8f9;
+        }
+
+         @media (max-width: 768px) {
+             .header h1 { font-size: 1.5rem; }
+             .leaderboard { grid-template-columns: 1fr; }
+             .podium { grid-template-columns: 1fr; }
+             .comp-row { grid-template-columns: 24px 1fr 74px; }
+         }
     </style>
 </head>
 <body>
@@ -194,13 +330,42 @@
             </div>
         </div>
         <div class="panel" id="panel-chart">
-            <h3 style="margin-bottom:16px; color:#a78bfa; font-weight: 600;">Total Points by Team</h3>
-            <div class="bar-chart" id="bar-chart"></div>
+            <h3 id="comparison-title" style="margin-bottom:12px; color:#a78bfa; font-weight: 600;">Top Players by Points</h3>
+            <div class="metric-switcher" id="metric-switcher">
+                <button class="metric-btn active" data-metric="totalPoints">Points</button>
+                <button class="metric-btn" data-metric="runs">Runs</button>
+                <button class="metric-btn" data-metric="wickets">Wickets</button>
+                <button class="metric-btn" data-metric="catches">Catches</button>
+                <button class="metric-btn" data-metric="avgPoints">Avg Pts</button>
+            </div>
+            <div class="comparison-wrap">
+                <div class="podium" id="podium-chart"></div>
+                <div class="comp-list" id="comp-chart"></div>
+            </div>
         </div>
     </div>
     <script>
     let TEAMS = [], PLAYERS = [];
+    let comparisonMetric = 'totalPoints';
     const COLORS = ['#7c3aed','#a855f7','#ec4899','#f43f5e','#f97316','#eab308','#22c55e','#06b6d4','#3b82f6'];
+    const METRIC_META = {
+        totalPoints: { label: 'Points', decimals: 0 },
+        runs: { label: 'Runs', decimals: 0 },
+        wickets: { label: 'Wickets', decimals: 0 },
+        catches: { label: 'Catches', decimals: 0 },
+        avgPoints: { label: 'Avg Pts', decimals: 1 }
+    };
+    const TEAM_LOGOS = {
+        'ESCN 11': { abbr: 'E11', color: '#7c3aed' },
+        'Madmax Xl': { abbr: 'MMX', color: '#ec4899' },
+        "Patil's X1": { abbr: 'PX1', color: '#06b6d4' },
+        'Backfoot Bazball 11': { abbr: 'BB11', color: '#f97316' },
+        'Bevarsi Brothers CC': { abbr: 'BBC', color: '#22c55e' },
+        'Ferrari XI': { abbr: 'FXI', color: '#ef4444' },
+        'Bowl Movement': { abbr: 'BM', color: '#84cc16' },
+        'RCBCSK X1': { abbr: 'RCX', color: '#3b82f6' },
+        'Wicket Warriors': { abbr: 'WW', color: '#a855f7' }
+    };
 
     async function loadData() {
         const resp = await fetch('data.json');
@@ -224,6 +389,41 @@
         renderTeams(); renderPlayers(); renderChart();
     }
 
+    function getTeamLogoMeta(teamName) {
+        if (TEAM_LOGOS[teamName]) return TEAM_LOGOS[teamName];
+        const abbr = String(teamName || '')
+            .split(/\s+/)
+            .filter(Boolean)
+            .slice(0, 2)
+            .map(w => w[0])
+            .join('')
+            .toUpperCase() || 'TM';
+        return { abbr, color: '#64748b' };
+    }
+
+    function teamLogoHtml(teamName) {
+        const { abbr, color } = getTeamLogoMeta(teamName);
+        return `<span class="team-logo" style="--logo:${color}" title="${teamName}">${abbr}</span>`;
+    }
+
+    function metricValue(player, metric) {
+        const v = Number(player?.[metric] ?? 0);
+        return Number.isFinite(v) ? v : 0;
+    }
+
+    function formatMetricValue(value, metric) {
+        const decimals = METRIC_META[metric]?.decimals ?? 0;
+        return Number(value).toFixed(decimals);
+    }
+
+    function setMetricButtonsState() {
+        document.querySelectorAll('#metric-switcher .metric-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.metric === comparisonMetric);
+        });
+        const title = document.getElementById('comparison-title');
+        if (title) title.textContent = `Top Players by ${METRIC_META[comparisonMetric].label}`;
+    }
+
     function renderTeams() {
         const sorted = [...TEAMS].sort((a, b) => b.totalPoints - a.totalPoints);
         document.getElementById('leaderboard').innerHTML = sorted.map((t, i) => {
@@ -232,7 +432,7 @@
             return `
             <div class="team-card ${cls}">
                 <div class="rank-badge">${badge}</div>
-                <h3>${t.name}</h3>
+                <h3><span class="team-title">${teamLogoHtml(t.name)}<span>${t.name}</span></span></h3>
                 <div class="owner">${t.owner}</div>
                 <div class="total">${t.totalPoints}</div>
                 <div class="players">
@@ -259,20 +459,50 @@
             return sortAsc ? va - vb : vb - va;
         });
         tbody.innerHTML = list.map((p, i) => `
-            <tr><td class="rank">${i+1}</td><td>${p.name}</td><td>${p.team}</td><td><b>${p.totalPoints || '-'}</b></td><td>${p.matches || '-'}</td><td>${p.avgPoints || '-'}</td><td>${p.runs || '-'}</td><td>${p.wickets || '-'}</td><td>${p.catches || '-'}</td></tr>
+            <tr><td class="rank">${i+1}</td><td>${p.name}</td><td class="team-cell">${teamLogoHtml(p.team)}<span class="team-cell-name">${p.team}</span></td><td><b>${p.totalPoints || '-'}</b></td><td>${p.matches || '-'}</td><td>${p.avgPoints || '-'}</td><td>${p.runs || '-'}</td><td>${p.wickets || '-'}</td><td>${p.catches || '-'}</td></tr>
         `).join('');
     }
 
     function renderChart() {
-        const sorted = [...TEAMS].sort((a, b) => b.totalPoints - a.totalPoints);
-        const max = sorted[0]?.totalPoints || 1;
-        document.getElementById('bar-chart').innerHTML = sorted.map((t, i) => `
-            <div class="bar-wrapper">
-                <div class="bar-val">${t.totalPoints}</div>
-                <div class="bar" style="height:${(t.totalPoints / max) * 200}px; background: linear-gradient(to top, ${COLORS[i%COLORS.length]}88, ${COLORS[i%COLORS.length]});"></div>
-                <div class="bar-label">${t.name}</div>
+        const sorted = [...PLAYERS]
+            .filter(p => metricValue(p, comparisonMetric) > 0)
+            .sort((a, b) => metricValue(b, comparisonMetric) - metricValue(a, comparisonMetric))
+            .slice(0, 15);
+        const max = metricValue(sorted[0], comparisonMetric) || 1;
+
+        // Podium chart
+        const podiumEl = document.getElementById('podium-chart');
+        podiumEl.innerHTML = sorted.slice(0, 3).map((p, i) => `
+            <div class="podium-card">
+                <div class="podium-top">
+                    <div class="podium-rank">${i === 0 ? '🥇' : i === 1 ? '🥈' : '🥉'}</div>
+                    <div class="podium-points">${formatMetricValue(metricValue(p, comparisonMetric), comparisonMetric)}</div>
+                </div>
+                <div class="podium-name">${p.name}</div>
+                <div class="podium-meta">${p.team} • ${p.matches} Matches</div>
+                <div class="podium-bar-track">
+                    <div class="podium-bar-fill" style="width:${(metricValue(p, comparisonMetric) / max) * 100}%; background: linear-gradient(to right, ${COLORS[i%COLORS.length]}88, ${COLORS[i%COLORS.length]});"></div>
+                </div>
             </div>
         `).join('');
+
+        // Comparison chart
+        const compEl = document.getElementById('comp-chart');
+        compEl.innerHTML = sorted.map((p, i) => `
+            <div class="comp-row">
+                <div class="comp-rank">${i+1}</div>
+                <div class="comp-main">
+                    <div class="comp-name">${p.name}</div>
+                    <div class="comp-sub">${p.team}</div>
+                    <div class="comp-track">
+                        <div class="comp-fill" style="width:${(metricValue(p, comparisonMetric) / max) * 100}%; background: linear-gradient(to right, ${COLORS[i%COLORS.length]}88, ${COLORS[i%COLORS.length]});"></div>
+                    </div>
+                </div>
+                <div class="comp-points">${formatMetricValue(metricValue(p, comparisonMetric), comparisonMetric)}</div>
+            </div>
+        `).join('');
+
+        setMetricButtonsState();
     }
 
     document.querySelectorAll('.tab').forEach(tab => {
@@ -296,6 +526,14 @@
             if (sortCol === i) sortAsc = !sortAsc; else { sortCol = i; sortAsc = false; }
             renderPlayers(document.getElementById('player-search').value);
         });
+    });
+    document.getElementById('metric-switcher').addEventListener('click', e => {
+        const btn = e.target.closest('.metric-btn');
+        if (!btn) return;
+        const m = btn.dataset.metric;
+        if (!METRIC_META[m]) return;
+        comparisonMetric = m;
+        renderChart();
     });
     loadData();
     </script>
