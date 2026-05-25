@@ -123,7 +123,7 @@
         },
         {
           "name": "Raj Bawa",
-          "points": 97.0
+          "points": 48.0
         },
         {
           "name": "Mayank Rawat",
@@ -158,7 +158,7 @@
           "points": 5.0
         }
       ],
-      "totalPoints": 8014.0
+      "totalPoints": 7965.0
     },
     {
       "name": "Madmax Xl",
@@ -544,7 +544,7 @@
         },
         {
           "name": "Manimaran Siddharth",
-          "points": 174.0
+          "points": 50.0
         },
         {
           "name": "Akshat Raghuwanshi",
@@ -567,7 +567,7 @@
           "points": 164.0
         }
       ],
-      "totalPoints": 6869.0
+      "totalPoints": 6745.0
     },
     {
       "name": "Bevarsi Brothers CC",
@@ -671,14 +671,14 @@
         },
         {
           "name": "Matthew Short",
-          "points": 100.0
+          "points": 47.0
         },
         {
           "name": "Manish Pandey",
           "points": 132.0
         }
       ],
-      "totalPoints": 6822.0
+      "totalPoints": 6769.0
     },
     {
       "name": "Ferrari XI",
@@ -1504,7 +1504,7 @@
       "name": "Raj Bawa",
       "team": "ESCN 11",
       "matches": 3,
-      "totalPoints": 97.0,
+      "totalPoints": 48.0,
       "avgPoints": 32.3,
       "runs": 16,
       "wickets": 2,
@@ -2504,7 +2504,7 @@
       "name": "Manimaran Siddharth",
       "team": "Backfoot Bazball 11",
       "matches": 4,
-      "totalPoints": 174.0,
+      "totalPoints": 50.0,
       "avgPoints": 43.5,
       "runs": 0,
       "wickets": 6,
@@ -2804,7 +2804,7 @@
       "name": "Matthew Short",
       "team": "Bevarsi Brothers CC",
       "matches": 3,
-      "totalPoints": 100.0,
+      "totalPoints": 47.0,
       "avgPoints": 33.3,
       "runs": 60,
       "wickets": 0,
