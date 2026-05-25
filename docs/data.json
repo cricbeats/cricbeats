@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-24",
+  "updated": "2026-05-25",
   "teams": [
     {
       "name": "ESCN 11",
@@ -122,8 +122,8 @@
           "points": 240.0
         },
         {
-          "name": "Raj Angad Bawa",
-          "points": 0.0
+          "name": "Raj Bawa",
+          "points": 97.0
         },
         {
           "name": "Mayank Rawat",
@@ -158,7 +158,7 @@
           "points": 5.0
         }
       ],
-      "totalPoints": 7917.0
+      "totalPoints": 8014.0
     },
     {
       "name": "Madmax Xl",
@@ -543,8 +543,8 @@
           "points": 0
         },
         {
-          "name": "M. Siddharth",
-          "points": 0
+          "name": "Manimaran Siddharth",
+          "points": 174.0
         },
         {
           "name": "Akshat Raghuwanshi",
@@ -567,7 +567,7 @@
           "points": 164.0
         }
       ],
-      "totalPoints": 6695.0
+      "totalPoints": 6869.0
     },
     {
       "name": "Bevarsi Brothers CC",
@@ -670,15 +670,15 @@
           "points": 0.0
         },
         {
-          "name": "Matthew William Short",
-          "points": 0
+          "name": "Matthew Short",
+          "points": 100.0
         },
         {
           "name": "Manish Pandey",
           "points": 132.0
         }
       ],
-      "totalPoints": 6722.0
+      "totalPoints": 6822.0
     },
     {
       "name": "Ferrari XI",
@@ -1202,11 +1202,11 @@
           "points": 163.0
         },
         {
-          "name": "Tejasvi Singh",
-          "points": 0
+          "name": "Tejasvi Dahiya",
+          "points": 30.0
         }
       ],
-      "totalPoints": 6570.0
+      "totalPoints": 6600.0
     }
   ],
   "players": [
@@ -1501,14 +1501,14 @@
       "catches": 1
     },
     {
-      "name": "Raj Angad Bawa",
+      "name": "Raj Bawa",
       "team": "ESCN 11",
-      "matches": 0,
-      "totalPoints": 0.0,
-      "avgPoints": 0,
-      "runs": 0,
-      "wickets": 0,
-      "catches": 0
+      "matches": 3,
+      "totalPoints": 97.0,
+      "avgPoints": 32.3,
+      "runs": 16,
+      "wickets": 2,
+      "catches": 3
     },
     {
       "name": "Mayank Rawat",
@@ -2501,14 +2501,14 @@
       "catches": 0
     },
     {
-      "name": "M. Siddharth",
+      "name": "Manimaran Siddharth",
       "team": "Backfoot Bazball 11",
-      "matches": 0,
-      "totalPoints": 0,
-      "avgPoints": 0,
+      "matches": 4,
+      "totalPoints": 174.0,
+      "avgPoints": 43.5,
       "runs": 0,
-      "wickets": 0,
-      "catches": 0
+      "wickets": 6,
+      "catches": 2
     },
     {
       "name": "Akshat Raghuwanshi",
@@ -2801,14 +2801,14 @@
       "catches": 8
     },
     {
-      "name": "Matthew William Short",
+      "name": "Matthew Short",
       "team": "Bevarsi Brothers CC",
-      "matches": 0,
-      "totalPoints": 0,
-      "avgPoints": 0,
-      "runs": 0,
+      "matches": 3,
+      "totalPoints": 100.0,
+      "avgPoints": 33.3,
+      "runs": 60,
       "wickets": 0,
-      "catches": 0
+      "catches": 2
     },
     {
       "name": "Manish Pandey",
@@ -4061,14 +4061,14 @@
       "catches": 2
     },
     {
-      "name": "Tejasvi Singh",
+      "name": "Tejasvi Dahiya",
       "team": "Wicket Warriors",
-      "matches": 0,
-      "totalPoints": 0,
-      "avgPoints": 0,
-      "runs": 0,
+      "matches": 2,
+      "totalPoints": 30.0,
+      "avgPoints": 15.0,
+      "runs": 12,
       "wickets": 0,
-      "catches": 0
+      "catches": 1
     }
   ]
 }
