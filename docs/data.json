@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-25",
+  "updated": "2026-05-28",
   "teams": [
     {
       "name": "ESCN 11",
@@ -7,7 +7,7 @@
       "players": [
         {
           "name": "Abhishek Sharma",
-          "points": 919.0
+          "points": 949.0
         },
         {
           "name": "Yuzvendra Chahal",
@@ -23,7 +23,7 @@
         },
         {
           "name": "Shubman Gill",
-          "points": 1007.0
+          "points": 1021.0
         },
         {
           "name": "Rishabh Pant",
@@ -31,7 +31,7 @@
         },
         {
           "name": "Romario Shepherd",
-          "points": 340.0
+          "points": 344.0
         },
         {
           "name": "Vipraj Nigam",
@@ -47,7 +47,7 @@
         },
         {
           "name": "Salil Arora",
-          "points": 226.0
+          "points": 279.0
         },
         {
           "name": "Rachin Ravindra",
@@ -63,7 +63,7 @@
         },
         {
           "name": "Nandre Burger",
-          "points": 328.0
+          "points": 391.0
         },
         {
           "name": "Lungi Ngidi",
@@ -83,7 +83,7 @@
         },
         {
           "name": "Donovan Ferreira",
-          "points": 536.0
+          "points": 561.0
         },
         {
           "name": "Sameer Rizvi",
@@ -99,7 +99,7 @@
         },
         {
           "name": "Shivang Kumar",
-          "points": 271.0
+          "points": 336.0
         },
         {
           "name": "Jayant Yadav",
@@ -119,7 +119,7 @@
         },
         {
           "name": "Rasikh Salam Dar",
-          "points": 240.0
+          "points": 306.0
         },
         {
           "name": "Raj Bawa",
@@ -127,7 +127,7 @@
         },
         {
           "name": "Mayank Rawat",
-          "points": 0.0
+          "points": 4.0
         },
         {
           "name": "Himmat Singh",
@@ -151,14 +151,14 @@
         },
         {
           "name": "Nishant Sindhu",
-          "points": 91.0
+          "points": 101.0
         },
         {
           "name": "Krish Bhagat",
           "points": 5.0
         }
       ],
-      "totalPoints": 8006.0
+      "totalPoints": 8336.0
     },
     {
       "name": "Madmax Xl",
@@ -166,7 +166,7 @@
       "players": [
         {
           "name": "Vaibhav Suryavanshi",
-          "points": 923.0
+          "points": 1075.0
         },
         {
           "name": "Hardik Pandya",
@@ -174,7 +174,7 @@
         },
         {
           "name": "Yashasvi Jaiswal",
-          "points": 657.0
+          "points": 694.0
         },
         {
           "name": "Phil Salt",
@@ -198,7 +198,7 @@
         },
         {
           "name": "Mohammed Siraj",
-          "points": 529.0
+          "points": 527.0
         },
         {
           "name": "Ashutosh Sharma",
@@ -238,7 +238,7 @@
         },
         {
           "name": "Jofra Archer",
-          "points": 358.0
+          "points": 468.0
         },
         {
           "name": "Harshal Patel",
@@ -273,7 +273,7 @@
           "points": 0
         }
       ],
-      "totalPoints": 6170.0
+      "totalPoints": 6467.0
     },
     {
       "name": "Patil's X1",
@@ -281,7 +281,7 @@
       "players": [
         {
           "name": "Travis Head",
-          "points": 626.0
+          "points": 651.0
         },
         {
           "name": "Rohit Sharma",
@@ -313,7 +313,7 @@
         },
         {
           "name": "Jason Holder",
-          "points": 527.0
+          "points": 579.0
         },
         {
           "name": "Ayush Mhatre",
@@ -393,7 +393,7 @@
         },
         {
           "name": "Eshan Malinga",
-          "points": 219.0
+          "points": 257.0
         },
         {
           "name": "Kartik Sharma",
@@ -412,7 +412,7 @@
           "points": 24.0
         }
       ],
-      "totalPoints": 8541.0
+      "totalPoints": 8656.0
     },
     {
       "name": "Backfoot Bazball 11",
@@ -432,7 +432,7 @@
         },
         {
           "name": "Jos Buttler",
-          "points": 921.0
+          "points": 976.0
         },
         {
           "name": "Shreyas Iyer",
@@ -520,7 +520,7 @@
         },
         {
           "name": "Venkatesh Iyer",
-          "points": 202.0
+          "points": 230.0
         },
         {
           "name": "Rinku Singh",
@@ -536,7 +536,7 @@
         },
         {
           "name": "Pat Cummins",
-          "points": 286.0
+          "points": 285.0
         },
         {
           "name": "Prithvi Shaw",
@@ -560,14 +560,14 @@
         },
         {
           "name": "Brijesh Sharma",
-          "points": 215.0
+          "points": 217.0
         },
         {
           "name": "Azmatullah Omarzai",
           "points": 164.0
         }
       ],
-      "totalPoints": 6745.0
+      "totalPoints": 6829.0
     },
     {
       "name": "Bevarsi Brothers CC",
@@ -575,7 +575,7 @@
       "players": [
         {
           "name": "Devdutt Padikkal",
-          "points": 769.0
+          "points": 816.0
         },
         {
           "name": "Tilak Varma",
@@ -587,7 +587,7 @@
         },
         {
           "name": "Nitish Kumar Reddy",
-          "points": 645.0
+          "points": 741.0
         },
         {
           "name": "Jofra Archer",
@@ -603,7 +603,7 @@
         },
         {
           "name": "Heinrich Klaasen",
-          "points": 976.0
+          "points": 1016.0
         },
         {
           "name": "Mukesh Kumar",
@@ -611,7 +611,7 @@
         },
         {
           "name": "Josh Hazlewood",
-          "points": 364.0
+          "points": 409.0
         },
         {
           "name": "Shardul Thakur",
@@ -678,7 +678,7 @@
           "points": 132.0
         }
       ],
-      "totalPoints": 6769.0
+      "totalPoints": 6997.0
     },
     {
       "name": "Ferrari XI",
@@ -686,11 +686,11 @@
       "players": [
         {
           "name": "Rashid Khan",
-          "points": 618.0
+          "points": 632.0
         },
         {
           "name": "Rajat Patidar",
-          "points": 661.0
+          "points": 803.0
         },
         {
           "name": "Venkatesh Iyer",
@@ -734,11 +734,11 @@
         },
         {
           "name": "Washington Sundar",
-          "points": 546.0
+          "points": 559.0
         },
         {
           "name": "Dhruv Jurel",
-          "points": 845.0
+          "points": 932.0
         },
         {
           "name": "Arjun Tendulkar",
@@ -774,7 +774,7 @@
         },
         {
           "name": "Riyan Parag",
-          "points": 294.0
+          "points": 336.0
         },
         {
           "name": "Nehal Wadhera",
@@ -798,7 +798,7 @@
         },
         {
           "name": "Sakib Hussain",
-          "points": 243.0
+          "points": 247.0
         },
         {
           "name": "Lhuan-dre Pretorius",
@@ -809,7 +809,7 @@
           "points": 0.0
         }
       ],
-      "totalPoints": 5724.0
+      "totalPoints": 6026.0
     },
     {
       "name": "Bowl Movement",
@@ -817,11 +817,11 @@
       "players": [
         {
           "name": "Krunal Pandya",
-          "points": 584.0
+          "points": 704.0
         },
         {
           "name": "Ishan Kishan",
-          "points": 934.0
+          "points": 1002.0
         },
         {
           "name": "Marcus Stoinis",
@@ -849,7 +849,7 @@
         },
         {
           "name": "Tim David",
-          "points": 454.0
+          "points": 470.0
         },
         {
           "name": "Azmatullah Omarzai",
@@ -909,7 +909,7 @@
         },
         {
           "name": "Jacob Duffy",
-          "points": 0.0
+          "points": 83.0
         },
         {
           "name": "Mayank Yadav",
@@ -948,7 +948,7 @@
           "points": 257.0
         }
       ],
-      "totalPoints": 6531.0
+      "totalPoints": 6818.0
     },
     {
       "name": "RCBCSK X1",
@@ -976,7 +976,7 @@
         },
         {
           "name": "Kagiso Rabada",
-          "points": 734.0
+          "points": 793.0
         },
         {
           "name": "Cameron Green",
@@ -1044,7 +1044,7 @@
         },
         {
           "name": "Jitesh Sharma",
-          "points": 128.0
+          "points": 158.0
         },
         {
           "name": "Deepak Chahar",
@@ -1068,7 +1068,7 @@
         },
         {
           "name": "Rahul Tewatia",
-          "points": 84.0
+          "points": 184.0
         },
         {
           "name": "Yash Thakur",
@@ -1083,7 +1083,7 @@
           "points": 0
         }
       ],
-      "totalPoints": 6977.0
+      "totalPoints": 7166.0
     },
     {
       "name": "Wicket Warriors",
@@ -1099,7 +1099,7 @@
         },
         {
           "name": "Virat Kohli",
-          "points": 880.0
+          "points": 952.0
         },
         {
           "name": "Mitchell Marsh",
@@ -1119,7 +1119,7 @@
         },
         {
           "name": "Bhuvneshwar Kumar",
-          "points": 745.0
+          "points": 801.0
         },
         {
           "name": "Pat Cummins",
@@ -1127,7 +1127,7 @@
         },
         {
           "name": "Prasidh Krishna",
-          "points": 410.0
+          "points": 440.0
         },
         {
           "name": "Naman Dhir",
@@ -1175,11 +1175,11 @@
         },
         {
           "name": "Ravindra Jadeja",
-          "points": 175.0
+          "points": 244.0
         },
         {
           "name": "Sai Sudharsan",
-          "points": 591.0
+          "points": 620.0
         },
         {
           "name": "Arshdeep Singh",
@@ -1195,30 +1195,30 @@
         },
         {
           "name": "Smaran Ravichandran",
-          "points": 59.0
+          "points": 72.0
         },
         {
           "name": "Praful Hinge",
-          "points": 163.0
+          "points": 240.0
         },
         {
           "name": "Tejasvi Dahiya",
           "points": 30.0
         }
       ],
-      "totalPoints": 6600.0
+      "totalPoints": 6946.0
     }
   ],
   "players": [
     {
       "name": "Abhishek Sharma",
       "team": "ESCN 11",
-      "matches": 14,
-      "totalPoints": 919.0,
-      "avgPoints": 65.6,
+      "matches": 15,
+      "totalPoints": 949.0,
+      "avgPoints": 63.3,
       "runs": 563,
       "wickets": 0,
-      "catches": 7
+      "catches": 10
     },
     {
       "name": "Yuzvendra Chahal",
@@ -1253,12 +1253,12 @@
     {
       "name": "Shubman Gill",
       "team": "ESCN 11",
-      "matches": 13,
-      "totalPoints": 1007.0,
-      "avgPoints": 77.5,
-      "runs": 616,
+      "matches": 14,
+      "totalPoints": 1021.0,
+      "avgPoints": 72.9,
+      "runs": 618,
       "wickets": 0,
-      "catches": 10
+      "catches": 11
     },
     {
       "name": "Rishabh Pant",
@@ -1273,9 +1273,9 @@
     {
       "name": "Romario Shepherd",
       "team": "ESCN 11",
-      "matches": 13,
-      "totalPoints": 340.0,
-      "avgPoints": 26.1,
+      "matches": 14,
+      "totalPoints": 344.0,
+      "avgPoints": 24.6,
       "runs": 83,
       "wickets": 7,
       "catches": 2
@@ -1313,10 +1313,10 @@
     {
       "name": "Salil Arora",
       "team": "ESCN 11",
-      "matches": 10,
-      "totalPoints": 226.0,
-      "avgPoints": 22.6,
-      "runs": 121,
+      "matches": 11,
+      "totalPoints": 279.0,
+      "avgPoints": 25.4,
+      "runs": 156,
       "wickets": 0,
       "catches": 3
     },
@@ -1343,22 +1343,22 @@
     {
       "name": "Eshan Malinga",
       "team": "ESCN 11",
-      "matches": 14,
+      "matches": 15,
       "totalPoints": 356.0,
-      "avgPoints": 41.1,
-      "runs": 2,
-      "wickets": 19,
+      "avgPoints": 40.9,
+      "runs": 7,
+      "wickets": 20,
       "catches": 4
     },
     {
       "name": "Nandre Burger",
       "team": "ESCN 11",
-      "matches": 11,
-      "totalPoints": 328.0,
-      "avgPoints": 29.8,
-      "runs": 13,
-      "wickets": 11,
-      "catches": 2
+      "matches": 12,
+      "totalPoints": 391.0,
+      "avgPoints": 32.6,
+      "runs": 14,
+      "wickets": 13,
+      "catches": 3
     },
     {
       "name": "Lungi Ngidi",
@@ -1383,10 +1383,10 @@
     {
       "name": "Rahul Tewatia",
       "team": "ESCN 11",
-      "matches": 12,
+      "matches": 13,
       "totalPoints": 95.0,
-      "avgPoints": 14.9,
-      "runs": 98,
+      "avgPoints": 21.5,
+      "runs": 166,
       "wickets": 0,
       "catches": 2
     },
@@ -1403,12 +1403,12 @@
     {
       "name": "Donovan Ferreira",
       "team": "ESCN 11",
-      "matches": 12,
-      "totalPoints": 536.0,
-      "avgPoints": 44.7,
-      "runs": 267,
+      "matches": 13,
+      "totalPoints": 561.0,
+      "avgPoints": 43.1,
+      "runs": 279,
       "wickets": 1,
-      "catches": 11
+      "catches": 12
     },
     {
       "name": "Sameer Rizvi",
@@ -1443,11 +1443,11 @@
     {
       "name": "Shivang Kumar",
       "team": "ESCN 11",
-      "matches": 12,
-      "totalPoints": 271.0,
-      "avgPoints": 22.6,
-      "runs": 26,
-      "wickets": 8,
+      "matches": 13,
+      "totalPoints": 336.0,
+      "avgPoints": 25.9,
+      "runs": 53,
+      "wickets": 9,
       "catches": 0
     },
     {
@@ -1493,11 +1493,11 @@
     {
       "name": "Rasikh Salam Dar",
       "team": "ESCN 11",
-      "matches": 10,
-      "totalPoints": 240.0,
-      "avgPoints": 39.9,
+      "matches": 11,
+      "totalPoints": 306.0,
+      "avgPoints": 42.3,
       "runs": 3,
-      "wickets": 14,
+      "wickets": 16,
       "catches": 1
     },
     {
@@ -1514,7 +1514,7 @@
       "name": "Mayank Rawat",
       "team": "ESCN 11",
       "matches": 1,
-      "totalPoints": 0.0,
+      "totalPoints": 4.0,
       "avgPoints": 4.0,
       "runs": 0,
       "wickets": 0,
@@ -1573,10 +1573,10 @@
     {
       "name": "Nishant Sindhu",
       "team": "ESCN 11",
-      "matches": 4,
-      "totalPoints": 91.0,
-      "avgPoints": 22.8,
-      "runs": 38,
+      "matches": 5,
+      "totalPoints": 101.0,
+      "avgPoints": 20.2,
+      "runs": 43,
       "wickets": 0,
       "catches": 3
     },
@@ -1594,7 +1594,7 @@
       "name": "Vaibhav Suryavanshi",
       "team": "Madmax Xl",
       "matches": 0,
-      "totalPoints": 923.0,
+      "totalPoints": 1075.0,
       "avgPoints": 0,
       "runs": 0,
       "wickets": 0,
@@ -1613,10 +1613,10 @@
     {
       "name": "Yashasvi Jaiswal",
       "team": "Madmax Xl",
-      "matches": 14,
-      "totalPoints": 657.0,
-      "avgPoints": 46.9,
-      "runs": 397,
+      "matches": 15,
+      "totalPoints": 694.0,
+      "avgPoints": 46.3,
+      "runs": 426,
       "wickets": 0,
       "catches": 4
     },
@@ -1673,10 +1673,10 @@
     {
       "name": "Mohammed Siraj",
       "team": "Madmax Xl",
-      "matches": 14,
-      "totalPoints": 529.0,
-      "avgPoints": 37.8,
-      "runs": 0,
+      "matches": 15,
+      "totalPoints": 527.0,
+      "avgPoints": 35.1,
+      "runs": 5,
       "wickets": 17,
       "catches": 4
     },
@@ -1733,12 +1733,12 @@
     {
       "name": "Smaran Ravichandran",
       "team": "Madmax Xl",
-      "matches": 4,
+      "matches": 5,
       "totalPoints": 0.0,
-      "avgPoints": 14.8,
-      "runs": 18,
+      "avgPoints": 14.4,
+      "runs": 19,
       "wickets": 0,
-      "catches": 3
+      "catches": 4
     },
     {
       "name": "Shashank Singh",
@@ -1773,12 +1773,12 @@
     {
       "name": "Jofra Archer",
       "team": "Madmax Xl",
-      "matches": 14,
-      "totalPoints": 358.0,
-      "avgPoints": 52.9,
-      "runs": 53,
-      "wickets": 21,
-      "catches": 5
+      "matches": 15,
+      "totalPoints": 468.0,
+      "avgPoints": 56.7,
+      "runs": 57,
+      "wickets": 24,
+      "catches": 8
     },
     {
       "name": "Harshal Patel",
@@ -1863,10 +1863,10 @@
     {
       "name": "Travis Head",
       "team": "Patil's X1",
-      "matches": 14,
-      "totalPoints": 626.0,
-      "avgPoints": 44.7,
-      "runs": 393,
+      "matches": 15,
+      "totalPoints": 651.0,
+      "avgPoints": 43.4,
+      "runs": 410,
       "wickets": 1,
       "catches": 0
     },
@@ -1883,11 +1883,11 @@
     {
       "name": "Ravindra Jadeja",
       "team": "Patil's X1",
-      "matches": 11,
+      "matches": 12,
       "totalPoints": 346.0,
-      "avgPoints": 47.4,
-      "runs": 209,
-      "wickets": 8,
+      "avgPoints": 49.2,
+      "runs": 221,
+      "wickets": 10,
       "catches": 1
     },
     {
@@ -1943,11 +1943,11 @@
     {
       "name": "Jason Holder",
       "team": "Patil's X1",
-      "matches": 8,
-      "totalPoints": 527.0,
-      "avgPoints": 65.9,
+      "matches": 9,
+      "totalPoints": 579.0,
+      "avgPoints": 64.3,
       "runs": 58,
-      "wickets": 13,
+      "wickets": 15,
       "catches": 8
     },
     {
@@ -1993,11 +1993,11 @@
     {
       "name": "Jacob Duffy",
       "team": "Patil's X1",
-      "matches": 4,
+      "matches": 5,
       "totalPoints": 166.0,
-      "avgPoints": 41.5,
+      "avgPoints": 49.8,
       "runs": 0,
-      "wickets": 6,
+      "wickets": 9,
       "catches": 1
     },
     {
@@ -2143,11 +2143,11 @@
     {
       "name": "Eshan Malinga",
       "team": "Patil's X1",
-      "matches": 14,
-      "totalPoints": 219.0,
-      "avgPoints": 41.1,
-      "runs": 2,
-      "wickets": 19,
+      "matches": 15,
+      "totalPoints": 257.0,
+      "avgPoints": 40.9,
+      "runs": 7,
+      "wickets": 20,
       "catches": 4
     },
     {
@@ -2193,12 +2193,12 @@
     {
       "name": "Jitesh Sharma",
       "team": "Backfoot Bazball 11",
-      "matches": 13,
+      "matches": 14,
       "totalPoints": 151.0,
-      "avgPoints": 21.5,
-      "runs": 90,
+      "avgPoints": 22.1,
+      "runs": 105,
       "wickets": 0,
-      "catches": 13
+      "catches": 14
     },
     {
       "name": "Ravi Bishnoi",
@@ -2213,22 +2213,22 @@
     {
       "name": "Riyan Parag",
       "team": "Backfoot Bazball 11",
-      "matches": 12,
+      "matches": 13,
       "totalPoints": 205.0,
       "avgPoints": 41.6,
-      "runs": 272,
+      "runs": 298,
       "wickets": 2,
       "catches": 4
     },
     {
       "name": "Jos Buttler",
       "team": "Backfoot Bazball 11",
-      "matches": 14,
-      "totalPoints": 921.0,
-      "avgPoints": 65.8,
-      "runs": 469,
+      "matches": 15,
+      "totalPoints": 976.0,
+      "avgPoints": 65.1,
+      "runs": 498,
       "wickets": 0,
-      "catches": 21
+      "catches": 22
     },
     {
       "name": "Shreyas Iyer",
@@ -2443,10 +2443,10 @@
     {
       "name": "Venkatesh Iyer",
       "team": "Backfoot Bazball 11",
-      "matches": 4,
-      "totalPoints": 202.0,
-      "avgPoints": 61.5,
-      "runs": 158,
+      "matches": 5,
+      "totalPoints": 230.0,
+      "avgPoints": 54.8,
+      "runs": 177,
       "wickets": 0,
       "catches": 1
     },
@@ -2483,10 +2483,10 @@
     {
       "name": "Pat Cummins",
       "team": "Backfoot Bazball 11",
-      "matches": 7,
-      "totalPoints": 286.0,
-      "avgPoints": 40.9,
-      "runs": 29,
+      "matches": 8,
+      "totalPoints": 285.0,
+      "avgPoints": 35.6,
+      "runs": 30,
       "wickets": 8,
       "catches": 2
     },
@@ -2543,9 +2543,9 @@
     {
       "name": "Brijesh Sharma",
       "team": "Backfoot Bazball 11",
-      "matches": 11,
-      "totalPoints": 215.0,
-      "avgPoints": 33.9,
+      "matches": 12,
+      "totalPoints": 217.0,
+      "avgPoints": 31.2,
       "runs": 2,
       "wickets": 13,
       "catches": 1
@@ -2563,10 +2563,10 @@
     {
       "name": "Devdutt Padikkal",
       "team": "Bevarsi Brothers CC",
-      "matches": 13,
-      "totalPoints": 769.0,
-      "avgPoints": 59.1,
-      "runs": 433,
+      "matches": 14,
+      "totalPoints": 816.0,
+      "avgPoints": 58.3,
+      "runs": 463,
       "wickets": 0,
       "catches": 12
     },
@@ -2593,22 +2593,22 @@
     {
       "name": "Nitish Kumar Reddy",
       "team": "Bevarsi Brothers CC",
-      "matches": 13,
-      "totalPoints": 645.0,
-      "avgPoints": 49.6,
-      "runs": 264,
-      "wickets": 7,
-      "catches": 9
+      "matches": 14,
+      "totalPoints": 741.0,
+      "avgPoints": 52.9,
+      "runs": 302,
+      "wickets": 8,
+      "catches": 10
     },
     {
       "name": "Jofra Archer",
       "team": "Bevarsi Brothers CC",
-      "matches": 14,
+      "matches": 15,
       "totalPoints": 383.0,
-      "avgPoints": 52.9,
-      "runs": 53,
-      "wickets": 21,
-      "catches": 5
+      "avgPoints": 56.7,
+      "runs": 57,
+      "wickets": 24,
+      "catches": 8
     },
     {
       "name": "Nicholas Pooran",
@@ -2633,12 +2633,12 @@
     {
       "name": "Heinrich Klaasen",
       "team": "Bevarsi Brothers CC",
-      "matches": 14,
-      "totalPoints": 976.0,
-      "avgPoints": 69.7,
-      "runs": 606,
+      "matches": 15,
+      "totalPoints": 1016.0,
+      "avgPoints": 67.7,
+      "runs": 624,
       "wickets": 0,
-      "catches": 12
+      "catches": 13
     },
     {
       "name": "Mukesh Kumar",
@@ -2653,12 +2653,12 @@
     {
       "name": "Josh Hazlewood",
       "team": "Bevarsi Brothers CC",
-      "matches": 11,
-      "totalPoints": 364.0,
-      "avgPoints": 33.1,
+      "matches": 12,
+      "totalPoints": 409.0,
+      "avgPoints": 34.1,
       "runs": 0,
-      "wickets": 12,
-      "catches": 3
+      "wickets": 13,
+      "catches": 5
     },
     {
       "name": "Shardul Thakur",
@@ -2823,30 +2823,30 @@
     {
       "name": "Rashid Khan",
       "team": "Ferrari XI",
-      "matches": 14,
-      "totalPoints": 618.0,
-      "avgPoints": 44.1,
-      "runs": 35,
+      "matches": 15,
+      "totalPoints": 632.0,
+      "avgPoints": 42.1,
+      "runs": 43,
       "wickets": 19,
       "catches": 4
     },
     {
       "name": "Rajat Patidar",
       "team": "Ferrari XI",
-      "matches": 12,
-      "totalPoints": 661.0,
-      "avgPoints": 55.1,
-      "runs": 393,
+      "matches": 13,
+      "totalPoints": 803.0,
+      "avgPoints": 61.8,
+      "runs": 486,
       "wickets": 0,
-      "catches": 7
+      "catches": 8
     },
     {
       "name": "Venkatesh Iyer",
       "team": "Ferrari XI",
-      "matches": 4,
+      "matches": 5,
       "totalPoints": 44.0,
-      "avgPoints": 61.5,
-      "runs": 158,
+      "avgPoints": 54.8,
+      "runs": 177,
       "wickets": 0,
       "catches": 1
     },
@@ -2883,12 +2883,12 @@
     {
       "name": "Dasun Shanaka",
       "team": "Ferrari XI",
-      "matches": 4,
+      "matches": 5,
       "totalPoints": 0.0,
-      "avgPoints": 30.0,
-      "runs": 55,
+      "avgPoints": 27.6,
+      "runs": 60,
       "wickets": 1,
-      "catches": 1
+      "catches": 2
     },
     {
       "name": "Ajinkya Rahane",
@@ -2943,22 +2943,22 @@
     {
       "name": "Washington Sundar",
       "team": "Ferrari XI",
-      "matches": 13,
-      "totalPoints": 546.0,
-      "avgPoints": 42.0,
-      "runs": 303,
+      "matches": 14,
+      "totalPoints": 559.0,
+      "avgPoints": 39.9,
+      "runs": 311,
       "wickets": 1,
       "catches": 6
     },
     {
       "name": "Dhruv Jurel",
       "team": "Ferrari XI",
-      "matches": 14,
-      "totalPoints": 845.0,
-      "avgPoints": 60.4,
-      "runs": 458,
+      "matches": 15,
+      "totalPoints": 932.0,
+      "avgPoints": 62.1,
+      "runs": 508,
       "wickets": 0,
-      "catches": 17
+      "catches": 18
     },
     {
       "name": "Arjun Tendulkar",
@@ -3043,10 +3043,10 @@
     {
       "name": "Riyan Parag",
       "team": "Ferrari XI",
-      "matches": 12,
-      "totalPoints": 294.0,
+      "matches": 13,
+      "totalPoints": 336.0,
       "avgPoints": 41.6,
-      "runs": 272,
+      "runs": 298,
       "wickets": 2,
       "catches": 4
     },
@@ -3103,10 +3103,10 @@
     {
       "name": "Sakib Hussain",
       "team": "Ferrari XI",
-      "matches": 10,
-      "totalPoints": 243.0,
-      "avgPoints": 42.5,
-      "runs": 0,
+      "matches": 11,
+      "totalPoints": 247.0,
+      "avgPoints": 39.0,
+      "runs": 5,
       "wickets": 15,
       "catches": 1
     },
@@ -3133,20 +3133,20 @@
     {
       "name": "Krunal Pandya",
       "team": "Bowl Movement",
-      "matches": 14,
-      "totalPoints": 584.0,
-      "avgPoints": 41.7,
-      "runs": 182,
-      "wickets": 11,
+      "matches": 15,
+      "totalPoints": 704.0,
+      "avgPoints": 46.9,
+      "runs": 225,
+      "wickets": 13,
       "catches": 2
     },
     {
       "name": "Ishan Kishan",
       "team": "Bowl Movement",
-      "matches": 14,
-      "totalPoints": 934.0,
-      "avgPoints": 66.7,
-      "runs": 569,
+      "matches": 15,
+      "totalPoints": 1002.0,
+      "avgPoints": 66.8,
+      "runs": 602,
       "wickets": 0,
       "catches": 9
     },
@@ -3213,12 +3213,12 @@
     {
       "name": "Tim David",
       "team": "Bowl Movement",
-      "matches": 13,
-      "totalPoints": 454.0,
-      "avgPoints": 34.9,
-      "runs": 277,
+      "matches": 14,
+      "totalPoints": 470.0,
+      "avgPoints": 33.6,
+      "runs": 281,
       "wickets": 0,
-      "catches": 2
+      "catches": 3
     },
     {
       "name": "Azmatullah Omarzai",
@@ -3313,9 +3313,9 @@
     {
       "name": "Brijesh Sharma",
       "team": "Bowl Movement",
-      "matches": 11,
+      "matches": 12,
       "totalPoints": 158.0,
-      "avgPoints": 33.9,
+      "avgPoints": 31.2,
       "runs": 2,
       "wickets": 13,
       "catches": 1
@@ -3363,11 +3363,11 @@
     {
       "name": "Jacob Duffy",
       "team": "Bowl Movement",
-      "matches": 4,
-      "totalPoints": 0.0,
-      "avgPoints": 41.5,
+      "matches": 5,
+      "totalPoints": 83.0,
+      "avgPoints": 49.8,
       "runs": 0,
-      "wickets": 6,
+      "wickets": 9,
       "catches": 1
     },
     {
@@ -3493,12 +3493,12 @@
     {
       "name": "Sai Sudharsan",
       "team": "RCBCSK X1",
-      "matches": 14,
+      "matches": 15,
       "totalPoints": 371.0,
-      "avgPoints": 68.7,
-      "runs": 638,
+      "avgPoints": 66.1,
+      "runs": 652,
       "wickets": 0,
-      "catches": 3
+      "catches": 4
     },
     {
       "name": "Sanju Samson",
@@ -3513,11 +3513,11 @@
     {
       "name": "Kagiso Rabada",
       "team": "RCBCSK X1",
-      "matches": 14,
-      "totalPoints": 734.0,
-      "avgPoints": 52.4,
-      "runs": 35,
-      "wickets": 24,
+      "matches": 15,
+      "totalPoints": 793.0,
+      "avgPoints": 52.9,
+      "runs": 44,
+      "wickets": 26,
       "catches": 2
     },
     {
@@ -3683,12 +3683,12 @@
     {
       "name": "Jitesh Sharma",
       "team": "RCBCSK X1",
-      "matches": 13,
-      "totalPoints": 128.0,
-      "avgPoints": 21.5,
-      "runs": 90,
+      "matches": 14,
+      "totalPoints": 158.0,
+      "avgPoints": 22.1,
+      "runs": 105,
       "wickets": 0,
-      "catches": 13
+      "catches": 14
     },
     {
       "name": "Deepak Chahar",
@@ -3743,10 +3743,10 @@
     {
       "name": "Rahul Tewatia",
       "team": "RCBCSK X1",
-      "matches": 12,
-      "totalPoints": 84.0,
-      "avgPoints": 14.9,
-      "runs": 98,
+      "matches": 13,
+      "totalPoints": 184.0,
+      "avgPoints": 21.5,
+      "runs": 166,
       "wickets": 0,
       "catches": 2
     },
@@ -3803,12 +3803,12 @@
     {
       "name": "Virat Kohli",
       "team": "Wicket Warriors",
-      "matches": 14,
-      "totalPoints": 880.0,
-      "avgPoints": 62.9,
-      "runs": 557,
+      "matches": 15,
+      "totalPoints": 952.0,
+      "avgPoints": 63.5,
+      "runs": 600,
       "wickets": 0,
-      "catches": 8
+      "catches": 9
     },
     {
       "name": "Mitchell Marsh",
@@ -3853,31 +3853,31 @@
     {
       "name": "Bhuvneshwar Kumar",
       "team": "Wicket Warriors",
-      "matches": 14,
-      "totalPoints": 745.0,
-      "avgPoints": 53.2,
+      "matches": 15,
+      "totalPoints": 801.0,
+      "avgPoints": 53.4,
       "runs": 34,
-      "wickets": 24,
+      "wickets": 26,
       "catches": 1
     },
     {
       "name": "Pat Cummins",
       "team": "Wicket Warriors",
-      "matches": 7,
+      "matches": 8,
       "totalPoints": 0.0,
-      "avgPoints": 40.9,
-      "runs": 29,
+      "avgPoints": 35.6,
+      "runs": 30,
       "wickets": 8,
       "catches": 2
     },
     {
       "name": "Prasidh Krishna",
       "team": "Wicket Warriors",
-      "matches": 9,
-      "totalPoints": 410.0,
-      "avgPoints": 45.6,
-      "runs": 0,
-      "wickets": 14,
+      "matches": 10,
+      "totalPoints": 440.0,
+      "avgPoints": 44.0,
+      "runs": 6,
+      "wickets": 15,
       "catches": 3
     },
     {
@@ -3993,22 +3993,22 @@
     {
       "name": "Ravindra Jadeja",
       "team": "Wicket Warriors",
-      "matches": 11,
-      "totalPoints": 175.0,
-      "avgPoints": 47.4,
-      "runs": 209,
-      "wickets": 8,
+      "matches": 12,
+      "totalPoints": 244.0,
+      "avgPoints": 49.2,
+      "runs": 221,
+      "wickets": 10,
       "catches": 1
     },
     {
       "name": "Sai Sudharsan",
       "team": "Wicket Warriors",
-      "matches": 14,
-      "totalPoints": 591.0,
-      "avgPoints": 68.7,
-      "runs": 638,
+      "matches": 15,
+      "totalPoints": 620.0,
+      "avgPoints": 66.1,
+      "runs": 652,
       "wickets": 0,
-      "catches": 3
+      "catches": 4
     },
     {
       "name": "Arshdeep Singh",
@@ -4043,21 +4043,21 @@
     {
       "name": "Smaran Ravichandran",
       "team": "Wicket Warriors",
-      "matches": 4,
-      "totalPoints": 59.0,
-      "avgPoints": 14.8,
-      "runs": 18,
+      "matches": 5,
+      "totalPoints": 72.0,
+      "avgPoints": 14.4,
+      "runs": 19,
       "wickets": 0,
-      "catches": 3
+      "catches": 4
     },
     {
       "name": "Praful Hinge",
       "team": "Wicket Warriors",
-      "matches": 6,
-      "totalPoints": 163.0,
-      "avgPoints": 50.7,
+      "matches": 7,
+      "totalPoints": 240.0,
+      "avgPoints": 54.4,
       "runs": 3,
-      "wickets": 11,
+      "wickets": 14,
       "catches": 2
     },
     {
